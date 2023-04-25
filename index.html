@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -6,78 +7,93 @@
         <title>TK Photography</title>
     </head>
     <body>
-        <header>
-            <h1>TK Photography</h1>
-            <nav>
-                <ul>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-                    <li>top</li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>About</h2>
-                <p>Hello!</p> 
-                <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
-            </section>
-            <section>
-                <h2>Gallery</h1>
-                <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-
-                <img src="images/Chile.png" alt="Chile, 2001">
-                <p class="pBot pWhite">Chile, 2001</p>
-
-                <img src="images/Guatemala.png" alt="Guatemala, 1997">
-                <p class="pTop pWhite">Guatemala, 1997</p>
-
-                <img src="images/Hawaii.png" alt="Hawaii, 2010">                
-                <p class="pBot pWhite">Hawaii, 2010</p>
-
-                <img src="images/Iran.png" alt="Iran, 1999">               
-                <p class="pTop pBlack">Iran, 1999</p>
-
-                <img src="images/Ireland.png" alt="Ireland, 2012">                
-                <p class="pTop pBlack">Ireland, 2012</p>
-
-                <img src="images/Italy.png" alt="Italy, 2015">               
-                <p class="pBot pBlack"></p>Italy, 2015</p>
-
-                <img src="images/Moab-Desert.png" alt="Moab Desert, 2020">               
-                <p class="pBot pWhite">Moab Desert, 2020</p>
-                
-                <img src="images/Rocky-Mountains.png" alt="Rocky Mountains, 2009">
-                <p class="pTop pBlack">Rocky Mountains, 2009</p>
-
-                <img src="images/Switzerland.png" alt="Switzerland, 2014">
-                <p class="pTop pBlack">Switzerland, 2014</p>
-
-                <img src="images/UK.png" alt="UK, 2005">
-                <p class="pTop pBlack">UK, 2005</p>
-
-                <img src="images/USA.png" alt="USA, 2021">
-                <p class="pTop pBlack">USA, 2021</p>
-
-                <img src="images/Wyoming.png" alt="Wyoming, 2021">
-                <p class="pTop pWhite">Wyoming, 2021</p>
-            </section>
-        </main>
-        <footer>
-            <h2>Contact</h1>
-            <p>Please fill out this form and I'll connect with you soon.</p>
-            <form>
-                Your contact information
-                <label for="fullName">Name</label>
-                <input type="text" id="fullName" name="fullName" value="Your full name">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" value="Enter your email address">
-                <label for="message">Message</label>
-                <input type="text" id="message" name="message" value="What can I help you with?">
-                <input type="submit" value="Submit">
-            </form>
-            <p class="copy">Copyright 2021 TK Photography</p>
-        </footer>
+        <div class="centCont">
+            <header>
+                <h1>TK Photography</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#top">top</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h2>About</h2>
+                    <p>Hello!</p> 
+                    <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
+                </section>
+                <section class="gallery">
+                    <div class="gHead">
+                        <h2>Gallery</h2>
+                        <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+                    </div>
+                    <div class="imgBox"> 
+                        <img src="images/Chile.png" alt="Chile, 2001">
+                        <p class="pBot pWhite">Chile, 2001</p>
+                    </div>
+                    <div class="imgBox"> 
+                        <img src="images/Guatemala.png" alt="Guatemala, 1997">
+                        <p class="pTop pWhite">Guatemala, 1997</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Hawaii.png" alt="Hawaii, 2010">                
+                        <p class="pBot pWhite">Hawaii, 2010</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Iran.png" alt="Iran, 1999">               
+                        <p class="pTop pBlack">Iran, 1999</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Ireland.png" alt="Ireland, 2012">                
+                        <p class="pTop pBlack">Ireland, 2012</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Italy.png" alt="Italy, 2015">               
+                        <p class="pBot pBlack">Italy, 2015</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Moab-Desert.png" alt="Moab Desert, 2020">               
+                        <p class="pBot pWhite">Moab Desert, 2020</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Rocky-Mountains.png" alt="Rocky Mountains, 2009">
+                        <p class="pTop pBlack">Rocky Mountains, 2009</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Switzerland.png" alt="Switzerland, 2014">
+                        <p class="pTop pBlack">Switzerland, 2014</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/UK.png" alt="UK, 2005">
+                        <p class="pTop pBlack">UK, 2005</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/USA.png" alt="USA, 2021">
+                        <p class="pTop pBlack">USA, 2021</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="images/Wyoming.png" alt="Wyoming, 2021">
+                        <p class="pTop pWhite">Wyoming, 2021</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <h2>Contact</h2>
+                <p>Please fill out this form and I'll connect with you soon.</p>
+                <form>
+                    <label for="fullName">Name</label>               
+                    <input type="text" id="fullName" name="fullName" value="Your full name">
+                    <label for="email">Email</label>                   
+                    <input type="text" id="email" name="email" value="Enter your email address">                    
+                    <label for="message">Message</label>                   
+                    <input type="text" id="message" name="message" value="What can I help you with?">                   
+                    <input type="submit" value="Submit">
+                </form>
+                <small>Copyright 2021 TK Photography</small>
+            </footer>
+        </div>
     </body>
 </html>

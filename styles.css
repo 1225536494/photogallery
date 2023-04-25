@@ -1,0 +1,208 @@
+/* 
+Notes/Sizes/Colors were pulled from material slides
+Colors
+#007d7b Teal?
+#000000 Black
+#ffffff White
+
+widths
+485px 1 col
+880px 2 col
+1300px 3 col
+
+font
+font-family: Arial, Helvetica, sans-serif;
+p {font-size: 1.25em;}
+figcaption, label, input, small {font-size: 1em;}
+nav a {font-size: 1.5em;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+
+*/
+
+html {
+    background-color: #000000;
+}
+.centCont {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: left;
+}
+
+main {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    color: #007d7b;
+    font-size: 3em;
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+section p {
+    text-align: left;
+    margin: 10px 10px;
+}
+
+label, input, small {
+    font-size: 1em;
+}
+
+input {
+    color: #007d7b;
+}
+
+nav {
+    align-content: center;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+    padding: 3px 5px;
+    z-index: 100;
+}
+
+.pWhite {
+    color: #ffffff;
+}
+
+.pBlack {
+    color: #000000;
+}
+
+.pTop {
+    position: absolute;
+    align-self: start;
+    justify-self: center;
+}
+
+.pBot {
+    position: absolute;
+    align-self: end;
+    justify-self: center;
+}
+
+.imgBox, footer {
+    max-width: 485px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.imgBox img {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+form {
+    text-align: left;
+    display: grid;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[value="Submit"] {
+    background-color: #007d7b;
+    color: #ffffff;
+    border: 5px solid #007d7b;
+    border-radius: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:880px) {
+    .centCont {
+        max-width: 880px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .gHead {
+        grid-column: 1/ span 2;
+    }
+
+    footer {
+        width: 850px;
+        min-width: 850px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .centCont {
+        max-width: 1300px;
+    }
+    
+    nav {
+        text-align: right;
+    }
+
+    nav ul {
+        list-style: none;
+        display: inline-flex;
+        padding-left: 10px;
+    }
+
+    nav li {
+        padding-left: 10px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .gHead {
+        grid-column: 1/ span 3;
+    }
+
+    footer {
+        max-width: 1250px;
+    }
+}
