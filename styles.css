@@ -169,7 +169,7 @@ input[value="Submit"] {
     }
 
     footer {
-        width: 850px;
+        width: 100%;
         min-width: 850px;
     }
 }
@@ -203,6 +203,7 @@ input[value="Submit"] {
     }
 
     footer {
+        width: 100%;
         max-width: 1250px;
     }
 }
